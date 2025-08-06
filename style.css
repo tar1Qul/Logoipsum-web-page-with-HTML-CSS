@@ -40,7 +40,6 @@ nav li a {
   color: #ffffff;
 }
 
-/* Shared nav flex container */
 .nav-items {
   list-style: none;
   display: flex;
@@ -49,19 +48,13 @@ nav li a {
   margin: 0;
   padding: 0;
 }
-
-/* For links inside nav and logo link */
-.nav-items a,
-.nav-link {
+.nav-items a {
   text-decoration: none;
   color: white;
   font-weight: bold;
   transition: color 0.3s ease;
 }
-
-/* Hover effect for nav and logo */
-.nav-items a:hover,
-.nav-link:hover {
+.nav-items a:hover {
   color: #333;
 }
 
