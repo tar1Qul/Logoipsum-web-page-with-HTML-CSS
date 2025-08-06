@@ -40,10 +40,31 @@ nav li a {
   color: #ffffff;
 }
 
-.nav-items:hover{
-  transition: 0.3s;
-  color: #212121;
+/* Shared nav flex container */
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
+
+/* For links inside nav and logo link */
+.nav-items a,
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for nav and logo */
+.nav-items a:hover,
+.nav-link:hover {
+  color: #333;
+}
+
 .language {
   color: #ffffff;
   font-size: 16px;
