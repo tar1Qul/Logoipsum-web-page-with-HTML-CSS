@@ -14,6 +14,7 @@ header {
   background-position: center;
 }
 
+
 .nav_menu {
   max-width: 1512px;
   width: 1356px;
@@ -38,6 +39,24 @@ nav li a {
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: inline-block;
+}
+
+a img {
+  transition: filter 0.3s ease;
+}
+
+a:hover img {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(0%) saturate(0%) hue-rotate(178deg) brightness(96%) contrast(95%);
 }
 
 .nav-items {
