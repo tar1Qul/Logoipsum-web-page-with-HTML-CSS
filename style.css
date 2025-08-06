@@ -40,6 +40,10 @@ nav li a {
   color: #ffffff;
 }
 
+.nav-items:hover{
+  transition: 0.3s;
+  color: #212121;
+}
 .language {
   color: #ffffff;
   font-size: 16px;
