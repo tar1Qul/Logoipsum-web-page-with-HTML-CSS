@@ -13,11 +13,13 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="recponsive.css">
+  <link rel="stylesheet" href="language.js">
 </head>
 
 <body>
   <header>
-    <div class="nav_menu">
+    <div  class="nav_menu">
       <a href="index.html" class="nav-link">
         <img width="140px" height="30px" src="./images/icons/logo.png" alt="Logo">
       </a>
@@ -32,12 +34,20 @@
         </ul>
       </nav>
 
-
-      <div class="language">
-        <img src="./images/icons/internet.png" alt="">
-        <h5>EN</h5>
-        <img src="./images/icons/ri-arrow-drop-down-line.png" alt="">
-      </div>
+    <div class="language-selector">
+      <button class="language-toggle">
+        <img src="./images/icons/internet.png" alt="Language">
+        <span class="current-language">EN</span>
+        <img src="./images/icons/ri-arrow-drop-down-line.png" alt="Dropdown">
+      </button>
+      <ul class="language-dropdown">
+        <li><a href="#" data-lang="en">English (EN)</a></li>
+        <li><a href="#" data-lang="bd">Bengali (BD)</a></li>
+        <li><a href="#" data-lang="es">Español (ES)</a></li>
+        <li><a href="#" data-lang="fr">Français (FR)</a></li>
+        <li><a href="#" data-lang="de">Deutsch (DE)</a></li>
+        <li><a href="#" data-lang="ja">日本語 (JA)</a></li>
+      </ul>
     </div>
 
     <div class="header_content_main">
@@ -58,50 +68,77 @@
   </header>
 
   <main>
+
     <section class="sec_destination">
       <h3 class="section_title">Most Popular Destination</h3>
 
       <div class="destination_items">
-        <div class="destination_item">
-          <img src="./images/destination_1.png" alt="Sea Beach View">
-          <h5>Sea Beach View</h5>
-          <span>1130 place</span>
+        
+        <div class="card-2">
+          <div class="destination_item">
+            <img src="./images/destination_1.png" alt="Sea Beach View">
+            <h5>Sea Beach View</h5>
+            <button class="btn-1">1130 place</button>
+          </div>
         </div>
-        <div class="destination_item">
-          <img src="images/destination_2.png" alt="Luxurious Resort At Sea">
-          <h5>Luxurious Resort At Sea</h5>
-          <span>2340 place</span>
+
+        <div class="card-2">
+          <div class="destination_item">
+            <img src="images/destination_2.png" alt="Luxurious Resort At Sea">
+            <h5>Luxurious Resort At Sea</h5>
+            <button class="btn-1">2340 place</button>
+          </div>
         </div>
-        <div class="destination_item">
-          <img src="./images/destination_3.png" alt="Great Switzerland">
-          <h5>Great Switzerland</h5>
-          <span>1230 place</span>
+
+        <div class="card-2">
+          <div class="destination_item">
+            <img src="./images/destination_3.png" alt="Great Switzerland">
+            <h5>Great Switzerland</h5>
+            <button class="btn-1">1230 place</button>
+          </div>
         </div>
-        <div class="destination_item">
-          <img src="./images/destination_4.png" alt="Venice, Veneto, Italy">
-          <h5>Venice, Veneto, Italy</h5>
-          <span>342 place</span>
+
+        <div class="card-2">
+          <div class="destination_item">
+            <img src="./images/destination_4.png" alt="Venice, Veneto, Italy">
+            <h5>Venice, Veneto, Italy</h5>
+            <button class="btn-1">342 place</button>
+          </div>
         </div>
-        <div class="destination_item">
-          <img src="./images/destination_5.png" alt="Thera, Greece">
-          <h5>Thera, Greece</h5>
-          <span>324 place</span>
+
+        <div class="card-2">
+          <div class="destination_item">
+            <img src="./images/destination_5.png" alt="Thera, Greece">
+            <h5>Thera, Greece</h5>
+            <button class="btn-1">324 place</button>
+          </div>
         </div>
-        <div class="destination_item">
-          <img src="./images/destination_6.png" alt="Liguria, Italy">
-          <h5>Liguria, Italy</h5>
-          <span>354 place</span>
+
+        <div class="card-2">
+          <div class="destination_item">
+            <img src="./images/destination_6.png" alt="Liguria, Italy">
+            <h5>Liguria, Italy</h5>
+            <button class="btn-1">354 place</button>
+          </div>
         </div>
-        <div class="destination_item">
-          <img src="./images/destination_7.png" alt="Goa Beach India">
-          <h5>Goa Beach India</h5>
-          <span>230 place</span>
+
+        <div class="card-2">
+          <div class="destination_item">
+            <img src="./images/destination_7.png" alt="Goa Beach India">
+            <h5>Goa Beach India</h5>
+            <button class="btn-1">230 place</button>
+          </div>
         </div>
-        <div class="destination_item">
-          <img src="./images/destination_8.png" alt="Luxurious Resort At Sea">
-          <h5>Luxurious Resort At Sea</h5>
-          <span>2340 place</span>
+
+        <div class="card-2">
+          <div class="destination_item">
+            <img src="./images/destination_8.png" alt="Luxurious Resort At Sea">
+            <h5>Luxurious Resort At Sea</h5>
+            <button class="btn-1">2340 place</button>
+          </div>
         </div>
+
+
       </div>
     </section>
 
@@ -121,46 +158,71 @@
       </div>
 
       <div class="escape_items">
-        <div class="escape_item">
-          <img src="./images/escape_1.png" alt="Santorini Escape">
-          <h5>Santorini Escape</h5>
-          <span>$260/per night</span>
+
+        <div class="card">
+          <div class="escape_item">
+            <img src="./images/escape_1.png" alt="Santorini Escape">
+            <h5>Santorini Escape</h5>
+            <span>$260/per night</span>
+          </div>
         </div>
-        <div class="escape_item">
-          <img src="./images/escape_2.png" alt="Maldives Ocean Villa">
-          <h5>Maldives Ocean Villa</h5>
-          <span>$410/per night</span>
+
+        <div class="card">
+          <div class="escape_item">
+            <img src="./images/escape_2.png" alt="Maldives Ocean Villa">
+            <h5>Maldives Ocean Villa</h5>
+            <span>$410/per night</span>
+          </div>
         </div>
-        <div class="escape_item">
-          <img src="./images/escape_3.png" alt="Cape Town Adventure">
-          <h5>Cape Town Adventure</h5>
-          <span>$180/per night</span>
+
+        <div class="card">
+          <div class="escape_item">
+            <img src="./images/escape_3.png" alt="Cape Town Adventure">
+            <h5>Cape Town Adventure</h5>
+            <span>$180/per night</span>
+          </div>
         </div>
-        <div class="escape_item">
-          <img src="./images/escape_4.png" alt="">
-          <h5>Bali Tropical Resort</h5>
-          <span>$220/per night</span>
+
+        <div class="card">
+          <div class="escape_item">
+            <img src="./images/escape_4.png" alt="">
+            <h5>Bali Tropical Resort</h5>
+            <span>$220/per night</span>
+          </div>
         </div>
-        <div class="escape_item">
-          <img src="./images/escape_5.png" alt="Kyoto Temples, Japan">
-          <h5>Kyoto Temples, Japan</h5>
-          <span>$270/per night</span>
+
+        <div class="card">
+          <div class="escape_item">
+            <img src="./images/escape_5.png" alt="Kyoto Temples, Japan">
+            <h5>Kyoto Temples, Japan</h5>
+            <span>$270/per night</span>
+          </div>
         </div>
-        <div class="escape_item">
-          <img src="./images/escape_6.png" alt="New York City Lights">
-          <h5>New York City Lights</h5>
-          <span>$350/per night</span>
+
+        <div class="card">
+          <div class="escape_item">
+            <img src="./images/escape_6.png" alt="New York City Lights">
+            <h5>New York City Lights</h5>
+            <span>$350/per night</span>
+          </div>
         </div>
-        <div class="escape_item">
-          <img src="./images/escape_7.png" alt="Patagonia Trek">
-          <h5>Patagonia Trek</h5>
-          <span>$190/per night</span>
+
+        <div class="card">
+          <div class="escape_item">
+            <img src="./images/escape_7.png" alt="Patagonia Trek">
+            <h5>Patagonia Trek</h5>
+            <span>$190/per night</span>
+          </div>
         </div>
-        <div class="escape_item">
-          <img src="./images/escape_8.png" alt="Romantic Paris">
-          <h5>Romantic Paris</h5>
-          <span>$310/per night</span>
+
+        <div class="card">
+          <div class="escape_item">
+            <img src="./images/escape_8.png" alt="Romantic Paris">
+            <h5>Romantic Paris</h5>
+            <span>$310/per night</span>
+          </div>
         </div>
+
       </div>
 
     </section>
@@ -170,23 +232,30 @@
       <div class="sec_world_head">
         <h2 class="sec_world_title">Find Your Perfect Escape</h2>
         <a href="">
-          <button class="sec_world_btn">View All</button>
+          <button class="sec_escape_btn">View All</button>
         </a>
       </div>
 
       <div class="world_items">
-        <div class="world_item">
-          <img src="./images/world_1.png" alt="Taj Mahal - IND">
-          <h5>Taj Mahal - IND</h5>
-          <span>India</span>
-          <span>Taj Mahal</span>
+
+        <div class="card-1">
+          <div class="world_item">
+            <img src="./images/world_1.png" alt="Taj Mahal - IND">
+            <h5>Taj Mahal - IND</h5>
+            <button class="sec_escape_btn-1">India</button>
+            <button class="sec_escape_btn-1">Taj Mahal</button>
+          </div>
         </div>
-        <div class="world_item">
-          <img src="./images/world_2.png" alt="Great Wall of China">
-          <h5>Great Wall of China</h5>
-          <span>Great Wall of China</span>
-          <span>China</span>
+
+        <div class="card-1">
+          <div class="world_item">
+            <img src="./images/world_2.png" alt="Great Wall of China">
+            <h5>Great Wall of China</h5>
+            <button class="sec_escape_btn-1">Great Wall of China</button>
+            <button class="sec_escape_btn-1">China</button>
+          </div>
         </div>
+
       </div>
 
     </section>
@@ -197,7 +266,7 @@
       <div class="sec_faq_head">
         <h2 class="sec_faq_title">FAQ</h2>
         <a href="">
-          <button class="sec_faq_btn">View All</button>
+          <button class="sec_escape_btn">View All</button>
         </a>
       </div>
 
@@ -230,7 +299,7 @@
           <br>
           <form>
             <input type="email" name="" id="" placeholder="Email address">
-            <input type="submit" value="Subscribe">
+            <input class="subscribe" type="submit" value="Subscribe">
           </form>
           <br>
           <p>By subscribing you agree to our <a href="">Privacy Policy</a></p>
@@ -250,10 +319,19 @@
             part
             of the
             ride-sharing revolution!</p>
-          <img width="24px" height="24px" src="./images/icons/instagram.png" alt="instagram">
+
+            <a href="https://www.facebook.com/tariqul.soykot.01" class="social"><img width="24px" height="24px" src="./images/icons/facebook-02.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/tariqul.soykot.001/" class="social"><img width="24px" height="24px" src="./images/icons/instagram.png" alt="instagram"></a>
+            <a href="https://x.com/savage_soykot" class="social"><img width="24px" height="24px" src="./images/icons/new-twitter.png" alt="twitter"></a>
+            <a href="https://www.youtube.com/" class="social"><img width="24px" height="24px" src="./images/icons/youtube.png" alt="youtube"></a>
+            
+
+
+
+          <!-- <img width="24px" height="24px" src="./images/icons/instagram.png" alt="instagram">
           <img width="24px" height="24px" src="./images/icons/new-twitter.png" alt="twitter">
           <img width="24px" height="24px" src="./images/icons/youtube.png" alt="youtube">
-          <img width="24px" height="24px" src="./images/icons/facebook-02.png" alt="facebook">
+          <img width="24px" height="24px" src="./images/icons/facebook-02.png" alt="facebook"> -->
         </div>
 
         <div class="footer_columns">
@@ -300,7 +378,7 @@
     </div>
 
     <div class="footer_copyright">
-      <span>©2025 All rights reserved.</span>
+      <span>All rights reserved by MD. TARIQUL ISLAM.</span>
       <span>Privacy Policy</span>
     </div>
 
